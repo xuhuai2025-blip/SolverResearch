@@ -1,0 +1,14 @@
+# 只提交源码、原生调度库、文档、示例和测试。
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+*.obj
+*.lib
+*.exp
+*.pdb
+.env
+.env.*

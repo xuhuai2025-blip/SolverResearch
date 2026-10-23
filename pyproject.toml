@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=70.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solver-research"
+version = "0.1.0"
+description = "Sparse nonlinear equations and stiff ODE/index-1 DAE integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.2,<3", "scipy>=1.15,<1.16", "scipy-dae==0.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+nonlinearSolver = ["**/*.md", "native/*.cpp", "native/*.dll", "native/*.dylib", "native/*.cmd"]
